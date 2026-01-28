@@ -1,0 +1,89 @@
+# PRACTICE QUESTIONS:
+
+print("---------------------Question 1-------------------------")
+
+# # 1. Write a program to input 2 numbers and print their sum.
+
+# num1 = int(input("Enter the first value: "))
+# num2 = int(input("Enter the second value: "))
+
+# sum = num1 + num2
+# print("The sum of 2 numbers is: ", sum)
+
+# # print("---------------------Question 2-------------------------")
+
+# # 2. WAP to input side of a square and print its area.
+
+# side = float(input("Enter the side os a square: "))
+# print("Area of a Square =", (side**2))
+
+# # print("--------------------Question 3--------------------------")
+
+# # 3. WAP to input 2 floating point numbers amd print their average.
+
+# numb1 = float(input("Enter the first value: "))
+# numb2 = float(input("Enter the second value: "))
+
+# print("Average of 2 numbers =", ((numb1 + numb2)/2))
+
+# print("--------------------Question 4--------------------------")
+
+# # 4. WAP to input 2 int numbers, a and b.
+# #    Print True if a is greater than or equal to b. If not print False.
+
+# a = int(input("Enter first value: "))
+# b = int(input("Enter second value: "))
+
+# print(a >= b)
+
+# print("--------------------Question 5--------------------------")
+
+# # 5. WAP to input user's first name and print its length.
+
+# name = input("Enter your first name: ")
+
+# print("Welcome ", name + "," + "\nLength of your first name is ", len(name))
+
+# print("---------------------Question 6-------------------------")
+
+# # 6. WAP to find the occurrence of '$' in a string.
+
+# str = "Hi, $ I am a $ dollar symbol $, He has $99.88"
+# print(str.count("$"))
+
+# print("-----------------------Question 7-----------------------")
+
+# # 7. WAP to check if number is entered by the user is even or odd.
+
+# num = int(input("Enter a number: "))
+
+# if num % 2 == 0:
+#     print("Even number")
+# else:
+#     print("Odd number")
+
+# print("-----------------------Question 8-----------------------")
+
+# # 8. WAP to find the greatest of 3 numbers entered by the user.
+
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+# num3 = int(input("Enter the third number: "))
+
+# if num1 >= num2 and num1 >= num3:
+#     print(num1,", first number is the greatest")
+# elif num2 >= num3:
+#     print(num2,", second number is the greatest")
+# else:
+#     print(num3,", Third number is the greatest")
+
+print("-----------------------Question 9-----------------------")
+
+# 9. WAP to check if a number is a multiple of 7 or not.
+
+number = 41
+
+if number % 7 == 0:
+    print("Number is multiplicand of 7")
+else:
+    print("Number is NOT a multiplicand of 7")
