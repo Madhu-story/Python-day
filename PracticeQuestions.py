@@ -77,13 +77,60 @@ print("---------------------Question 1-------------------------")
 # else:
 #     print(num3,", Third number is the greatest")
 
-print("-----------------------Question 9-----------------------")
+# print("-----------------------Question 9-----------------------")
 
-# 9. WAP to check if a number is a multiple of 7 or not.
+# # 9. WAP to check if a number is a multiple of 7 or not.
 
-number = 41
+# number = 41
 
-if number % 7 == 0:
-    print("Number is multiplicand of 7")
+# if number % 7 == 0:
+#     print("Number is multiplicand of 7")
+# else:
+#     print("Number is NOT a multiplicand of 7")
+
+# print("-----------------------Question 10-----------------------")
+
+# # WAP to ask the user to enter names of their favourite movies and store them in  a list.
+
+# movies = []
+# movie_name = input("Enter your 1st favourite movie name: ")
+# movies.append(movie_name)
+# movie_name = input("Enter your 2nd favourite movie name: ")
+# movies.append(movie_name)
+# movies.append(input("Enter your 3rd favourite movie name: "))
+# print(movies)
+
+print("-----------------------Question 11-----------------------")
+
+# WAP to to check if a list contains a palindrome of elements. (HINT: Use copy() method)
+
+list = [1, 2, 3, 2, 1]
+print(list)
+
+list1 = list.copy()
+list1.reverse()
+print(list1)
+
+if list1 == list:
+    print("The given list contains Palindrome elements")
 else:
-    print("Number is NOT a multiplicand of 7")
+    print("The list DOESNOT contain palindrome elements")
+
+
+print("-----------------------Question 12-----------------------")
+
+# WAP to count the number of students with "A" grade in the given tuple: ["C", "D", "A", "A", "B", "B", "A"]
+
+grades = ("C", "D", "A", "A", "B", "B", "A")
+scored = grades.count("A")
+print("Number of students scored grade 'A' are", scored)
+
+
+print("-----------------------Question 13-----------------------")
+
+# Store the above values in a list and sort them from "A" to "D"
+
+grades_list = ["C", "D", "A", "A", "B", "B", "A"]
+grades_list.sort()
+print(grades_list)
+
