@@ -1,0 +1,5 @@
+'r+' the pointer always points at the start. 
+So no truncate only wipes the existing and replaces with this line
+whereas 'w+' truncates means wipes out all old data and print only this.
+Write file always truncates the file, where as append() always add the text into the file.
+The pointer will always points at the end.
