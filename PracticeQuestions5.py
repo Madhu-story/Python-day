@@ -65,3 +65,82 @@ acc1 = Account(10000, 12345)
 acc1.debit(2000)
 
 acc1.credit(5000)
+
+
+print("-----------OOPS - example 43------------------")
+# Define a Circle class to create a circle with radius r using the constructor. 
+# Define the Area() method of the class which calculates the area of the circle.
+# Define the Permieter() method of the circle to calculate the perimeter.
+from math import *
+
+class Circle:
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        a = pi * (self.radius ** 2)
+        a = '{:.2f}'.format(a)
+        print("Area of the circle: ", a, "m")
+
+    def perimeter(self):
+        p = 2 * pi * self.radius
+        p = '{:.2f}'.format(p)
+        print("Perimeter of the circle: ", p, "m")
+        
+
+c = Circle(4)
+c.area()
+c.perimeter()
+
+print("-----------OOPS - example 44------------------")
+# Define a Employee class with attributes role, department & salary. 
+# This class also showDetails()method.
+# Create an Engineer class that inherits properties from Employee & has assitional att: name & age.
+
+class Employee:
+
+    def __init__(self, role, dep, sal):
+        self.role = role
+        self.dep = dep
+        self.sal = sal
+
+    def showDetails(self):
+        print("Role:", self.role)
+        print("Department:", self.dep)
+        print("Salary: Rp.",self.sal)
+
+
+class Engineer(Employee):
+
+    def __init__(self, name, age):
+        super().__init__("Accountant", "Finance", "66,000")
+        self.name = name
+        self.age = age
+        print("Name:", self.name)
+        print("Age:", self.age)
+        
+        # self.showDetails()
+        
+e = Engineer("Dhanya", 27)
+e.showDetails()
+
+
+print("-----------OOPS - example 45------------------")
+# Create a class called Order which stores item and price.
+# Use dander function __gt__() to convey that:
+# order 1 > order 2 if price of order 1 > price of order 2
+
+class Order:
+
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+    
+    def __gt__(self, order2):
+        return self.price > order2.price
+
+order1 = Order("milk", 48)
+order2 = Order("chips", 20)
+
+print(order1 > order2)
